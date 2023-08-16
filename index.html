@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>RABIE LAFKIR</title>
+</head>
+<body class="font-nunito">
+    <!-- intro -->
+    <div class="dark:from-slate-800 dark:to-slate-900 bg-gradient-to-t from-indigo-300 h-1/2 lg:h-screen relative top-0 overflow-hidden">
+        <!-- navbar -->
+        <nav class="flex justify-between w-full h-auto fixed top-0 bg-white z-20 px-0 md:px-10 dark:bg-slate-900">
+            <div class="text-gray-500 dark:text-gray-100 container mx-auto py-4 px-10 flex items-center justify-between">
+                <div class="flex items-center w-1/6 md:w-1/12 lg:w-8 xl:w-10 gap-2">
+                    <img class="w-full -z-10" src="assets/letter-r.png" alt="">
+                </div>
+                <ul class="hidden md:flex space-x-6 font-bold text-xs uppercase mx-auto">
+                    <li class="hover:text-indigo-900">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="hover:text-indigo-900">
+                        <a href="#about">About me</a>
+                    </li>
+                    <li class="hover:text-indigo-900">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="hover:text-indigo-900">
+                        <a href="#tech">Technologies</a>
+                    </li>
+                    <li class="hover:text-indigo-900">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="hover:text-indigo-900">
+                        <a href="#contact">Contact me</a>
+                    </li>
+                </ul>
+                <div id="toggle" class="hidden text-yellow-500  md:block w-5 cursor-pointer text-4xl ">
+                    <i class="fa-solid fa-moon "></i>
+                </div>
+                <div id="hamburger" class="text-3xl md:hidden cursor-pointer z-50 text-indigo-900">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul id="menu"
+                    class="bg-indigo-950 text-white absolute top-0 left-0 w-full text-sm text-center p-10 rounded-b-3xl space-y-8 hidden z-40">
+                    <li>
+                        <div id="toggle-mobile" class=" text-yellow-500 absolute top-0 left-0 my-7 mx-8 md:block w-5 cursor-pointer text-3xl ">
+                            <i id="smartlink" class="fa-solid fa-moon "></i>
+                        </div>
+                    </li>
+                    <li>
+                        <a id="smartlink" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a id="smartlink" href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a id="smartlink" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a id="smartlink" href="#tech">Technologies</a>
+                    </li>
+                    <li>
+                        <a id="smartlink" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a id="smartlink" href="#contact">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- intro content -->
+        <!-- image -->
+        <img id="sft" class="absolute bottom-0 right-0 lg:left-0 h-2/3 mx-auto object-cover z-10 "
+            src="./assets/intro-icon.png" alt="">
+        <!-- cercle -->
+        <div id="cer"
+            class="hidden lg:block absolute w-96 h-96 bg-indigo-900 rounded-full right-0 left-0 -bottom-1/4 mx-auto -z-20">
+        </div>
+        <!-- Animated text -->
+        <div
+            class="absolute top-1/3 left-2 text-xl sm:left-10 sm:text-3xl md:left-1/4 md:text-5xl lg:left-5 xl:left-32 xl:text-6xl font-bold ">
+            <span class="text-gray-600">Full Stack Web</span>
+            <p id="text" class="text-red-500"></p>
+        </div>
+        <!-- texts -->
+        <div class="hidden lg:flex flex-col gap-5 shadow-lg absolute top-56 right-8 mx-auto bg-white h-fit w-1/3 p-5 dark:bg-slate-900 dark:shadow-slate-800">
+            <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Rabie!</h1>
+            <p class="text-gray-400 dark:text-white">Passionate junior full stack web developer experienced in HTML, CSS, and
+                JavaScript,
+                with a focus on responsive design and clean coding.
+                Proficient in MERN Stack and dedicated to enhancing user experiences.
+                Let's collaborate on your next project
+            </p>
+            <a class="bg-indigo-700 text-white text-xl px-3 py-2 w-fit rounded-md font-semibold" href="#contact">Hire
+                Me</a>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about" class="px-10 dark:bg-slate-900">
+        <div class="container mx-auto flex flex-col-reverse lg:flex-row py-28 items-center gap-16">
+            <!-- left -->
+            <div class="relative w-fit">
+                <img class="absolute h-1/4 top-0 left-0 -z-10" src="assets/dots.png" alt="">
+                <div class="w-48 rounded-full overflow-hidden">
+                    <img class="h-full" src="assets/MyPicture.jpg" alt="">
+                </div>
+            </div>
+            <div class="my-auto flex flex-col gap-3">
+                <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
+                <h1 class="text-3xl font-medium dark:text-white">Clean Code</h1>
+                <h1 class="text-3xl font-medium dark:text-white">Better Experience</h1>
+                <p class="text-gray-400">
+                    With 1 year of hands-on experience in web development,
+                    I bring a passion for crafting responsive and user-friendly applications
+                    using HTML, CSS, and JavaScript.
+                    Proficient in React and committed to writing clean, maintainable code.
+                </p>
+            </div>
+            <!-- right -->
+
+        </div>
+    </div>
+    <!-- Services -->
+    <div id="services" class="dark:bg-slate-900">
+        <div class=" container mx-auto">
+            <!-- Top -->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold">SERVICES</h1>
+                <h1 class="text-3xl dark:text-white">What do I offer ?</h1>
+                <p class="w-1/2 text-center text-gray-400">My approach is to create a website that strengthens
+                    your comapany's brand while ensuring ease of use and simplicity for
+                    your audience
+                </p>
+            </div>
+            <!-- Bottom -->
+            <div class="p-6 flex flex-wrap sm:p-0">
+                <!-- card -->
+                <div class="flex flex-col gap-3 w-full md:w-4/12 shadow-2xl rounded-lg p-5 my-3 md:my-10   ">
+                    <div class="rounded-full flex justify-center items-center w-7 h-7 bg-indigo-500 text-white">
+                        <i class="fa-solid fa-code "></i>
+                    </div>
+                    <h1 class="font-medium text-lg dark:text-white">UI / UX Design</h1>
+                    <p class="text-gray-400">I specialize in creating interactive websites
+                        using the latest technologies of frontend development
+                    </p>
+                    <a class="text-indigo-600 font-semibold" href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div class="flex flex-col gap-3 w-full md:w-4/12 shadow-2xl rounded-lg p-5 my-3 md:my-10 ">
+                    <div class="rounded-full flex justify-center items-center w-7 h-7 bg-indigo-500 text-white">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h1 class="font-medium text-lg dark:text-white">Back End</h1>
+                    <p class="text-gray-400">Experienced in building robust and scalable backend solutions
+                        using modern technologies to support seamless web applications.
+                    </p>
+                    <a class="text-indigo-600 font-semibold" href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div class="flex flex-col gap-3 w-full md:w-4/12 shadow-2xl rounded-lg p-5 my-3 md:my-10 ">
+                    <div class="rounded-full flex justify-center items-center w-7 h-7 bg-indigo-500 text-white">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h1 class="font-medium text-lg dark:text-white">Database Server</h1>
+                    <p class="text-gray-400">
+                        Proficient in designing and managing efficient database
+                        systems to ensure data integrity and optimal performance for web applications.
+                    </p>
+                    <a class="text-indigo-600 font-semibold" href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div class="flex flex-col gap-3 w-full md:w-4/12 shadow-2xl rounded-lg p-5 my-3 md:my-10 ">
+                    <div class="rounded-full flex justify-center items-center w-7 h-7 bg-indigo-500 text-white">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <h1 class="font-medium text-lg dark:text-white">Version Control</h1>
+                    <p class="text-gray-400">
+                        Adept at utilizing version control systems to efficiently
+                        manage codebase changes and collaborate seamlessly within development teams.
+                    </p>
+                    <a class="text-indigo-600 font-semibold" href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div class="flex flex-col gap-3 w-full md:w-4/12 shadow-2xl rounded-lg p-5 my-3 md:my-10 ">
+                    <div class="rounded-full flex justify-center items-center w-7 h-7 bg-indigo-500 text-white">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <h1 class="font-medium text-lg dark:text-white">APIs</h1>
+                    <p class="text-gray-400">
+                        Skilled in creating and integrating APIs to enable seamless
+                        communication and data exchange between different components of web applications.
+                    </p>
+                    <a class="text-indigo-600 font-semibold" href="">Read More</a>
+                </div>
+                <!-- card -->
+                <div class="flex flex-col gap-3 w-full md:w-4/12 shadow-2xl rounded-lg p-5 my-3 md:my-10 ">
+                    <div class="rounded-full flex justify-center items-center w-7 h-7 bg-indigo-500 text-white">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h1 class="font-medium text-lg dark:text-white">Networks and Hosting Environments</h1>
+                    <p class="text-gray-400">
+
+                        Experienced in configuring and deploying web applications across diverse network
+                        and hosting environments to ensure reliable accessibility and optimal user experiences.
+                    </p>
+                    <a class="text-indigo-600 font-semibold" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Technologies -->
+    <div id="tech" class="dark:bg-slate-900">
+        <div class=" container mx-auto ">
+            <!-- Top -->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold">TECHNOLOGIES</h1>
+                <h1 class="text-2xl dark:text-white">Languages & Frameworks</h1>
+                <p class="w-1/2 text-center text-gray-400">MERN stack enthusiast proficient in harnessing MongoDB,
+                    Express.js, React, and Node.js to build dynamic and interactive web applications, combining the
+                    power of JavaScript across the entire development stack.
+                    Passionate about crafting seamless user experiences through these cutting-edge technologies.
+                </p>
+            </div>
+            <!-- Bottom -->
+            <div class="p-6 flex flex-wrap gap-5 justify-center">
+                <!-- card -->
+                <div id="tech-card"
+                    class="bg-gray-200 hover:scale-105 w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 shadow-xl rounded-lg p-5 my-3 md:my-10 dark:bg-slate-800   ">
+                    <img src="assets/html.png" alt="">
+                    <h1 class="text-indigo-600 font-bold text-center py-1">HTML</h1>
+                </div>
+                <!-- card -->
+                <div id="tech-card"
+                    class="bg-gray-200 hover:scale-105 w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 shadow-xl rounded-lg p-5 my-3 md:my-10 dark:bg-slate-800   ">
+                    <img src="assets/css.png" alt="">
+                    <h1 class="text-indigo-600 font-bold text-center py-1">CSS</h1>
+                </div>
+                <!-- card -->
+                <div id="tech-card"
+                    class="bg-gray-200 hover:scale-105 w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 shadow-xl rounded-lg p-5 my-3 md:my-10 dark:bg-slate-800   ">
+                    <img src="assets/js.png" alt="">
+                    <h1 class="text-indigo-600 font-bold text-center py-1">JavaScript</h1>
+                </div>
+                <!-- card -->
+                <div id="tech-card"
+                    class="bg-gray-200 hover:scale-105 w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 shadow-xl rounded-lg p-5 my-3 md:my-10 dark:bg-slate-800   ">
+                    <img src="assets/tailwind-css.png" alt="">
+                    <h1 class="text-indigo-600 font-bold text-center py-1">TailWind</h1>
+                </div>
+                <!-- card -->
+                <div id="tech-card"
+                    class="bg-gray-200 hover:scale-105 w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 shadow-xl rounded-lg p-5 my-3 md:my-10 dark:bg-slate-800   ">
+                    <img src="assets/bootstrap.png" alt="">
+                    <h1 class="text-indigo-600 font-bold text-center py-1">Bootstrap</h1>
+                </div>
+                <!-- card -->
+                <div id="tech-card"
+                    class="bg-gray-200 hover:scale-105 w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 shadow-xl rounded-lg p-5 my-3 md:my-10 dark:bg-slate-800   ">
+                    <img src="assets/react.png" alt="">
+                    <h1 class="text-indigo-600 font-bold text-center py-1">ReactJS</h1>
+                </div>
+                <!-- card -->
+                <div id="tech-card"
+                    class="bg-gray-200 hover:scale-105 w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 shadow-xl rounded-lg p-5 my-3 md:my-10 dark:bg-slate-800   ">
+                    <img src="assets/node.png" alt="">
+                    <h1 class="text-indigo-600 font-bold text-center py-1">NodeJS</h1>
+                </div>
+                <!-- card -->
+                <div id="tech-card"
+                    class="bg-gray-200 hover:scale-105 w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 shadow-xl rounded-lg p-5 my-3 md:my-10 dark:bg-slate-800   ">
+                    <img src="assets/express.png" alt="">
+                    <h1 class="text-indigo-600 font-bold text-center py-1">ExpressJS</h1>
+                </div>
+                <!-- card -->
+                <div id="tech-card"
+                    class="bg-gray-200 hover:scale-105 w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 shadow-xl rounded-lg p-5 my-3 md:my-10 dark:bg-slate-800   ">
+                    <img src="assets/mongo.png" alt="">
+                    <h1 class="text-indigo-600 font-bold text-center py-1">MongoDB</h1>
+                </div>
+                <!-- card -->
+                <div id="tech-card"
+                    class="bg-gray-200 hover:scale-105 w-1/2 sm:w-1/3 md:w-1/6 lg:w-1/6 shadow-xl rounded-lg p-5 my-3 md:my-10 dark:bg-slate-800   ">
+                    <img src="assets/git.png" alt="">
+                    <h1 class="text-indigo-600 font-bold text-center py-1">Git</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio & projects -->
+    <div id="portfolio" class="dark:bg-slate-900">
+        <div class=" container mx-auto">
+            <!-- Top -->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold">Portfolio</h1>
+                <h1 class="text-3xl dark:text-white">Projects & Works</h1>
+                <p class="w-1/2 text-center text-gray-400">During this year, I've been working on some personal projects
+                    just to increase
+                    my level in web development and also I worked on a project using JEE (JSP & Servlet).
+                </p>
+            </div>
+            <!-- Bottom -->
+            <div class="p-6 flex flex-wrap sm:p-0">
+
+                <!-- card -->
+                <div class="flex flex-col gap-3 w-full md:w-4/12 shadow-2xl rounded-lg p-5 my-3 md:my-10 ">
+                    <div class="w-full h-auto flex my-8 items-center">
+                        <img class="w-full" src="assets/school.png" alt="">
+                    </div>
+                    <h1 class="font-medium text-lg dark:text-white">School Manager</h1>
+                    <p class="text-gray-400">Desktop application that helps school to manage its students, their marks
+                        and other information.
+                        there is also profesors part.
+                    </p>
+                    <a class="text-indigo-600 font-semibold" href="">Visit My Work</a>
+                </div>
+                <!-- card -->
+                <div class="flex flex-col gap-3 w-full md:w-4/12 shadow-2xl rounded-lg p-5 my-3 md:my-10 ">
+                    <div class="w-2/3 h-auto flex my-5 mx-auto">
+                        <img class="w-full" src="assets/socialbook.png" alt="">
+                    </div>
+                    <h1 class="font-medium text-lg dark:text-white">SocialBook</h1>
+                    <p class="text-gray-400">
+                        Social Media website similar to Facebook, responsive and flexible. Made only with HTML&CSS.
+                        You can find almost every function existing in facebook.
+                    </p>
+                    <a class="text-indigo-600 font-semibold" href="">Visit My Work</a>
+                </div>
+                <!-- card -->
+                <div class="flex flex-col gap-3 w-full md:w-4/12 shadow-2xl rounded-lg p-5 my-3 md:my-10 ">
+                    <div class="w-full h-auto flex items-center my-4">
+                        <img class="w-1/5" src="assets/Techoners.png" alt="">
+                        <span class="text-2xl font-bold text-green-600">Stay with Techoners</span>
+                    </div>
+                    <h1 class="font-medium text-lg dark:text-white">Techoners template</h1>
+                    <p class="text-gray-400">
+
+                        Versatile and aesthetic pleasing responsive
+                        template, exclusively utilizing HTML and CSS.&nbsp;
+                        Exceptional user experience across a multitude of devices.
+                    </p>
+                    <a class="text-indigo-600 font-semibold" href="">Visit My Work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact" class="dark:bg-slate-900">
+        <div class="container mx-auto">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold">CONTACT</h1>
+                <h1 class="text-3xl dark:text-white">Have a Question?</h1>
+                <p class="w-1/2 text-center text-gray-400">
+                    Do you have an idea? Let's discuss it and see what we can do
+                    together.
+                </p>
+            </div>
+            <!-- bottom -->
+            <form class="mt-5 p-8 flex flex-col gap-5 items-center">
+                <input
+                    class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                    type="text" placeholder="Full Name or Pseudo" />
+                <input
+                    class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                    type="email" placeholder="Email" />
+                <textarea
+                    class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                    cols="30" rows="10" placeholder="Message..."></textarea>
+                <button class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer">
+                    Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="w-full bg-gray-800">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-bold text-white">Rabie LAFKIR.</span>
+          </div>
+          <span class="hidden md:block font-medium text-white">&copy;2023 Rabie LAFKIR. All Rights Reserved </span>
+          <div class="flex gap-2">
+            <a href="https://www.linkedin.com/in/rabie-lafkir/" class="text-white text-lg"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Rabie-Lafkir" class="text-white text-lg"><i class="fa-brands fa-github"></i></a>
+            <a href="https://web.facebook.com/rb.lafkir" class="text-white text-lg"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/rabie_lafkir/" class="text-white text-lg"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/RabieLafkir" class="text-white text-lg"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+</body>
+
+</html>
